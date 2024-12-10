@@ -11,7 +11,7 @@ const Container = styled.p`
         return "var(--text-size-1)";
     }
   }};
-  color: var (--text-color);
+  color: var(--text-color);
   font-weight: ${(props) => {
     switch (props.size) {
       case "sm":
