@@ -6,7 +6,7 @@ const Container = styled.section`
   justify-content: center;
   flex-direction: column;
   gap: 51px;
-  background: var (--backgound-color-1);
+  background: var(--backgound-color-1);
   width: 100%;
   min-height: 100vh;
 
