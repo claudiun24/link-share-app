@@ -5,7 +5,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 78ex;
+  height: 78px;
   padding: 16px;
   border-radius: 12px;
   background-color: var(--background-color-2);
@@ -44,6 +44,7 @@ const Container = styled.section`
       color: var(--app-color-1);
       svg path {
         fill: var(--app-color-1);
+      }
     }
   }
 `;
