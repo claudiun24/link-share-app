@@ -8,10 +8,14 @@ const Container = styled.main`
   padding: 24px;
   width: 100%;
   min-height: 100vh;
+  height: 100vh;
+
   .container__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+    height: 100%;
+
     .layout__preview {
       display: flex;
       align-items: center;
