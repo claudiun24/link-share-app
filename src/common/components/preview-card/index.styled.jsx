@@ -5,6 +5,9 @@ const Container = styled.section`
   position: relative;
   width: 307 px;
   height: 637 px;
+  background-color: var(--background-color-1);
+  border-top-right-radius: 53px;
+  border-top-left-radius: 53px;
 
   .container__img {
     position: absolute;

@@ -38,7 +38,7 @@ const Navigation = () => {
       </div>
       {/* TODO: Replace slug with actual id 
       https://jamilacuisine.ro/tiramisu-cu-zmeura-desertul-perfect-pentru-craciun-reteta-video/*/}
-      <Link to="/links/preview/:slug">
+      <Link to="/preview/1231231">
         <Button variant="outline">Preview</Button>
       </Link>
     </Container>
