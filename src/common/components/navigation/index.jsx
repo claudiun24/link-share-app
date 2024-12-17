@@ -30,14 +30,14 @@ const Navigation = () => {
             isActive ? "links__route links__route--active" : "links__route"
           }
           end={true}
-          to="/profile"
+          //TODO: Replace with the actual id
+          to="/profile/123123"
         >
           <ProfileIcon />
           Profile
         </NavLink>
       </div>
-      {/* TODO: Replace slug with actual id 
-      https://jamilacuisine.ro/tiramisu-cu-zmeura-desertul-perfect-pentru-craciun-reteta-video/*/}
+      {/* TODO: Replace slug with actual id*/}
       <Link to="/preview/1231231">
         <Button variant="outline">Preview</Button>
       </Link>
