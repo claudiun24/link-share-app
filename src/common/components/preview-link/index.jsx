@@ -5,7 +5,11 @@ import { Link } from "react-router";
 
 const PreviewLink = (props) => {
   return (
-    <Link to={props.url} target="_blank" rel="noopener noreferrer">
+    <Link
+      to={props.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Container
         type="button"
         bkgColor={props.bkgColor}
@@ -22,11 +26,11 @@ const PreviewLink = (props) => {
 };
 
 PreviewLink.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   iconChildren: PropTypes.element,
   onClick: PropTypes.func,
   bkgColor: PropTypes.string,
-  url: PropTypes.string,
+  url: PropTypes.string
 };
 
 export default PreviewLink;

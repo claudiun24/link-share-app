@@ -13,7 +13,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   variant: PropTypes.oneOf(["fill", "outline"])
 };
 

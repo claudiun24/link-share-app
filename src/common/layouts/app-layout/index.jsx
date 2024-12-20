@@ -1,22 +1,15 @@
 import PropTypes from "prop-types";
 import Container from "./index.styled";
 import { Navigation, PreviewCard } from "../../components";
+import { Links } from "react-router";
 
 const AppLayout = (props) => {
-  // TODO: Fetch data for preview card
-  const links = [
-    { type: "github", urlSuffix: "/alexandrularion" },
-    { type: "youtube", urlSuffix: "/alexandrularion" },
-    { type: "facebook", urlSuffix: "/alexandrularion" },
-    { type: "twitch", urlSuffix: "/alexandrularion" },
-  ];
-
   return (
     <Container>
       <Navigation />
       <div className="container__layout">
         <div className="layout__preview">
-          <PreviewCard links={links} />
+          <PreviewCard links={props.links} />
         </div>
         <div className="layout__content">{props.children}</div>
       </div>
@@ -26,6 +19,7 @@ const AppLayout = (props) => {
 
 AppLayout.propTypes = {
   children: PropTypes.element,
+  links: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default AppLayout;
