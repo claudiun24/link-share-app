@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Container = styled.section`
   display: flex;
   position: relative;
-  width: 307 px;
-  height: 637 px;
+  width: 307px;
+  height: 637px;
   background-color: var(--background-color-1);
   border-top-right-radius: 53px;
   border-top-left-radius: 53px;
@@ -23,6 +23,7 @@ const Container = styled.section`
       height: 100%;
     }
   }
+
   .container__links {
     display: flex;
     flex-direction: column;

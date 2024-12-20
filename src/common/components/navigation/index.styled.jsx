@@ -12,7 +12,7 @@ const Container = styled.section`
 
   .container__logo {
     width: 182px;
-    img: {
+    img {
       width: 100%;
       height: auto;
       object-fit: contain;
@@ -42,9 +42,20 @@ const Container = styled.section`
     .links__route--active {
       background: var(--app-color-3);
       color: var(--app-color-1);
+
       svg path {
         fill: var(--app-color-1);
       }
+    }
+  }
+  .container__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .buttons__logout {
+      border-color: var(--error-color);
+      color: var(--error-color);
     }
   }
 `;

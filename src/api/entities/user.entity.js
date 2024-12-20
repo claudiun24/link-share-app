@@ -2,14 +2,14 @@ import { authInstance } from "../index.config";
 
 const entity = {
   register: async (payload) => {
+    // Tip: payload example = { email: "alex@myemail.com", password: "myPassword" }
     try {
-      //Tip: payload example = {email: clau@email.com, password: "myPassword"}
       const response = await authInstance.post("/accounts:signUp", {
         email: payload.email,
         password: payload.password,
-        returnSecureToken: true
+        returnSecureToken: true,
       });
-      return response.data; //{ idToken: "...", refreshToken: "..." ,...}
+      return response.data; // { idToken: "...", refreshToken: "..." ,...}
     } catch (error) {
       console.log(
         "[API-ERROR]: Method: .register() | Message - ",
@@ -17,19 +17,15 @@ const entity = {
       );
     }
   },
-
   login: async (payload) => {
+    // Tip: payload example = { email: "alex@myemail.com", password: "myPassword" }
     try {
-      //Tip: payload example = {email: clau@email.com, password: "myPassword"}
-      const response = await authInstance.post(
-        "/accounts:signInWithPassword?",
-        {
-          email: payload.email,
-          password: payload.password,
-          returnSecureToken: true
-        }
-      );
-      return response.data; //{ idToken: "...", refreshToken: "..." ,...}
+      const response = await authInstance.post("/accounts:signInWithPassword", {
+        email: payload.email,
+        password: payload.password,
+        returnSecureToken: true,
+      });
+      return response.data; // { idToken: "...", refreshToken: "..." ,...}
     } catch (error) {
       console.log(
         "[API-ERROR]: Method: .login() | Message - ",
@@ -37,8 +33,7 @@ const entity = {
       );
     }
   },
-
-  logout: async () => {
+  logout: () => {
     try {
       localStorage.removeItem("id_token");
     } catch (error) {
@@ -47,6 +42,7 @@ const entity = {
         error.toString()
       );
     }
-  }
+  },
 };
+
 export default entity;

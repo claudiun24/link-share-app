@@ -7,7 +7,6 @@ const Container = styled.main`
   gap: 24px;
   padding: 24px;
   width: 100%;
-  min-height: 100vh;
   height: 100vh;
 
   .container__layout {

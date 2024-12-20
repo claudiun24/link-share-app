@@ -15,65 +15,65 @@ const CONSTANTS = {
       name: "Dev.to",
       urlPrefix: "https://dev.to",
       color: "#333333",
-      icon: DevtoIcon
+      icon: DevtoIcon,
     },
     facebook: {
       id: "hcUojuRRpzXpfLyYJBAbh",
       name: "Facebook",
       urlPrefix: "https://facebook.com",
       color: "#2442AC",
-      icon: FacebookIcon
+      icon: FacebookIcon,
     },
     github: {
       id: "kWpNsjApGgVRuXWVeowBd",
       name: "GitHub",
       urlPrefix: "https://github.com",
       color: "#1A1A1A",
-      icon: GithubIcon
+      icon: GithubIcon,
     },
     gitlab: {
       id: "lhMWTgfqznaRUCfJQIIGR",
       name: "Gitlab",
       urlPrefix: "https://gitlab.com",
       color: "#EB4925",
-      icon: GitlabIcon
+      icon: GitlabIcon,
     },
     linkedin: {
       id: "TfytrxitWhtNhcpTaXOeW",
       name: "Linkedin",
       urlPrefix: "https://www.linkedin.com/in",
       color: "#2D68FF",
-      icon: LinkedinIcon
+      icon: LinkedinIcon,
     },
     stackoverflow: {
       id: "AeyxKnVlsFZTBXscchlcO",
       name: "Stackoverflow",
       urlPrefix: "https://stackoverflow.com/users",
       color: "#EC7100",
-      icon: StackoverflowIcon
+      icon: StackoverflowIcon,
     },
     twitch: {
       id: "JsXDBIKKwFfzibgUyeDCo",
       name: "Twitch",
       urlPrefix: "https://www.twitch.tv",
       color: "#EE3FC8",
-      icon: TwitchIcon
+      icon: TwitchIcon,
     },
     twitter: {
       id: "QsGRBWhFmFFeEqEjAMOAv",
       name: "Twitter",
       urlPrefix: "https://x.com",
       color: "#43B7E9",
-      icon: TwitterIcon
+      icon: TwitterIcon,
     },
     youtube: {
       id: "PkgADdcvBryIPyKujXkMX",
       name: "Youtube",
       urlPrefix: "https://youtube.com",
       color: "#EE3939",
-      icon: YoutubeIcon
-    }
-  }
+      icon: YoutubeIcon,
+    },
+  },
 };
 
 export default CONSTANTS;

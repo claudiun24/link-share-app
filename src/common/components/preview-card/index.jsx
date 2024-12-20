@@ -9,10 +9,6 @@ const PreviewCard = (props) => {
       <div className="container__img">
         <img
           alt="Preview Smartphone"
-          src="/assets/preview-smartphone.png"
-        />
-        <img
-          alt="Preview Smartphone"
           src={
             props.asProfile
               ? "/assets/preview-smartphone-profile.png"
@@ -27,7 +23,7 @@ const PreviewCard = (props) => {
             icon: Icon,
             name,
             color,
-            urlPrefix
+            urlPrefix,
           } = CONSTANTS.PLATFORMS[type];
           return (
             <PreviewLink
@@ -47,7 +43,7 @@ const PreviewCard = (props) => {
 
 PreviewCard.propTypes = {
   links: PropTypes.arrayOf(PropTypes.object),
-  asProfile: PropTypes.bool
+  asProfile: PropTypes.bool,
 };
 
 export default PreviewCard;

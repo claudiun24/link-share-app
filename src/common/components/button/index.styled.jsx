@@ -39,6 +39,7 @@ const Container = styled.button`
         return "var(--button-color-2)";
     }
   }};
+
   &:active {
     background: ${(props) => {
       switch (props.variant) {

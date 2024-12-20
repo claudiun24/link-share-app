@@ -6,37 +6,31 @@ import {
   AuthLoginPage,
   AuthRegisterPage,
   LinksPage,
-  PreviewPage
-  ProfilePage,
+  PreviewPage,
 } from "./pages";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: LinksPage
+    Component: LinksPage,
   },
   {
     path: "/preview/:userId",
-    Component: PreviewPage
+    Component: PreviewPage,
   },
-  {
-    path: "/profile/:userId",
-    Component: ProfilePage,
-  },
-
   {
     path: "/auth",
     children: [
       {
         path: "/auth/login",
-        Component: AuthLoginPage
+        Component: AuthLoginPage,
       },
       {
         path: "/auth/register",
-        Component: AuthRegisterPage
-      }
-    ]
-  }
+        Component: AuthRegisterPage,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

@@ -8,14 +8,13 @@ const AppLayout = (props) => {
     { type: "github", urlSuffix: "/alexandrularion" },
     { type: "youtube", urlSuffix: "/alexandrularion" },
     { type: "facebook", urlSuffix: "/alexandrularion" },
-    { type: "twitch", urlSuffix: "/alexandrularion" }
+    { type: "twitch", urlSuffix: "/alexandrularion" },
   ];
 
   return (
     <Container>
       <Navigation />
       <div className="container__layout">
-        <div className="layout__preview">{/* Preview Links Component */}</div>
         <div className="layout__preview">
           <PreviewCard links={links} />
         </div>
@@ -26,7 +25,7 @@ const AppLayout = (props) => {
 };
 
 AppLayout.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.element,
 };
 
 export default AppLayout;

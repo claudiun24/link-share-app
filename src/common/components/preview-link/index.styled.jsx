@@ -26,6 +26,7 @@ const Container = styled.button`
     height: 100%;
     gap: 8px;
   }
+
   &:hover {
     opacity: 0.8;
   }

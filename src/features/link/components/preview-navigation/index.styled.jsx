@@ -8,6 +8,7 @@ const Container = styled.section`
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   padding: 24px;
+
   .container__nav {
     display: flex;
     align-items: center;
